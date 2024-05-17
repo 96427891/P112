@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <title>Hand gestures</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <h1>Hand gestures</h1>
+        <br>
+        <span>&#9994;</span>
+        <span>&#9996;</span>
+        <span>&#128076;</span>
+        <span>&#128077;</span>
+        <span>&#9995;</span>
+        <h2>This model is trained on the above hand gestures:</h2>
+        <br>
+<h2>Take a picture of you doing a hand gesture. The system will identify it.</h2>
+        <div id="camera"></div>
+        <button onclick="capture()" class="btn btn-success">Capture Image</button>
+        <br>
+        <h2 id="result1"></h2>
+        <h2 id="update_emoji"></h2>
+        <br>
+        <div id="captured_img"></div>
+        <button onclick="identify()" class="btn btn-warning">Identify Image</button>
+    </center>
+    <script src="main.js"></script>
+</body>
+
+
+</html>
